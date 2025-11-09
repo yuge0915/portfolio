@@ -1,36 +1,57 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Routes, Route } from 'react-router-dom'
+import Header from './components/Header'
+import Modal from './components/Modal'
+import Section from './components/Section'
+import Top from './components/animation'
+import SkillConteiner from './components/SkillConteiner'
+import Footer from './components/Footer'
+import { AnimatePresence } from 'framer-motion'
+import Works from './Works'
+import About from './About'
+import { Link } from 'react-router-dom'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-      <p className='text-2xl text-amber-400'> 
-        tailwindcss
-      </p>
+      <Header setIsOpen={setIsOpen} isOpen={isOpen} />
+      <AnimatePresence>{isOpen && <Modal setIsOpen={setIsOpen} />}</AnimatePresence>
+      
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Top />
+              <div className="w-full h-screen">
+                <SkillConteiner />
+              </div>
+              <Section name={'Contact'} className={''} />
+
+              <div className="flex justify-start pl-8 py-2">
+                <Link to="/">
+                  <Footer
+                    name={'Tops'}
+                    className={'text-black'}
+                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                  />
+                </Link>
+                <Link to="/works">
+                  <Footer name={'Works'} className={'text-black'} />
+                </Link>
+                <Link to="/about">
+                  <Footer name={'About'} className={'text-black'} />
+                </Link>
+                <small className="ml-auto pr-5">2025 AYUMI YUGE</small>
+              </div>
+            </>
+          }
+        />
+        <Route path="/works" element={<Works />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
     </>
   )
 }
