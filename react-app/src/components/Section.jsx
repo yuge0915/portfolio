@@ -48,7 +48,7 @@ export default function Section(props) {
                 href="mailto:yuge.a.24kdg@gmail.com"
                 className="text-2xl md:text-3xl font-semibold text-gray-200 hover:text-white transition-colors duration-300 group-hover:underline"
               >
-                yuge.a.24kdg@gmail.com
+                yuge.a.24kdgh@gmail.com
               </a>
             </div>
           </div>
