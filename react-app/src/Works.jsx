@@ -64,6 +64,26 @@ export default function Works() {
       description: '課題でバナーを制作しました',
       technologies: ['Photoshop'],
     },
+    {
+        id: 6,
+        title: 'バナー制作',
+        tag: '個人制作',
+        text: 'デザイン',
+        image: '/images/iphone.png', 
+        tagClassName: 'bg-orange-500',
+        description: '課題でバナーを制作しました',
+        technologies: ['Photoshop'],
+      },
+      {
+        id: 7,
+        title: 'バナー制作',
+        tag: '個人制作',
+        text: 'デザイン',
+        image: '/images/irasuto.jpg', 
+        tagClassName: 'bg-orange-500',
+        description: 'バナーを制作しました',
+        technologies: ['Illustrator'],
+      },
   ]
 
   const handleLinkClick = (path, scrollTo) => {
