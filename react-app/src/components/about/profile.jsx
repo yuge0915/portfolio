@@ -3,7 +3,7 @@ export default function About() {
     <div className="min-h-screen  bg-gray-900 flex flex-col justify-center items-center">
       <div className="flex justify-center">
         <div className="h-70 w-70">
-          <img src="../public/images/IMG_7351.PNG" alt="about" />
+        <img src="/images/IMG_7351.PNG" alt="about" />
         </div>
         <div className="flex flex-col items-center justify-center ml-10 leading-8 bg-zinc-900/80 backdrop-blur-sm rounded-lg border border-zinc-800 shadow-2xl p-8 md:p-12">
           <div className="pb-10">
