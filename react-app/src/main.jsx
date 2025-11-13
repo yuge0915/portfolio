@@ -7,7 +7,7 @@ import App from './App.jsx'
 createRoot(document.getElementById('root')).render(
   // // デバックモードなので無視でおけ
   <StrictMode>
-    <BrowserRouter basename="/portfolio">
+    <BrowserRouter basename="/">
       <App />
     </BrowserRouter>
   </StrictMode>
