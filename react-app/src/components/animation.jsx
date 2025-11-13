@@ -5,7 +5,7 @@ export default function Top() {
   return (
     <section
       className="relative flex flex-col justify-center items-center h-screen text-center overflow-hidden bg-gradient-to-b from-gray-900 via-gray-800 to-black"
-      id="animation"
+      id="top"
     >
       {/* 背景アニメーション */}
       <motion.div

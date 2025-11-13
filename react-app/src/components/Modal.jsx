@@ -1,16 +1,23 @@
 import React from 'react'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
 function Modal(props) {
   const setIsOpen = props.setIsOpen
-  const location = useLocation()// 現在のページのパスを取得
-  const navigate = useNavigate()  
+  const location = useLocation() // 現在のページのパスを取得
+  const navigate = useNavigate()
 
   const handleLinkClick = (path, scrollTo) => {
     setIsOpen(false)
-    
-    navigate(path, { state: { scrollTo } })
+    if (location.pathname === path && scrollTo) {
+      const element = document.getElementById(scrollTo)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }
+    } else {
+      // 別のページの場合、state を渡してナビゲート
+      navigate(path, { state: { scrollTo } })
+    }
   }
 
   return (
@@ -29,13 +36,13 @@ function Modal(props) {
           Top
         </button>
         <button
-          onClick={() => handleLinkClick('/works', null)}
+          onClick={() => handleLinkClick('/works', 'works')}
           className="text-white hover:text-gray-300 transition-colors py-3 text-center text-lg font-medium bg-transparent border-none cursor-pointer"
         >
           Works
         </button>
         <button
-          onClick={() => handleLinkClick('/about', 'about-section')}
+          onClick={() => handleLinkClick('/about', 'about')}
           className="text-white hover:text-gray-300 transition-colors py-3 text-center text-lg font-medium bg-transparent border-none cursor-pointer"
         >
           About

@@ -1,5 +1,5 @@
-export default function Footer(props) {
-  const { name, className, onClick } = props
+export default function Footer({ name, className, onClick }) {
+  // そのまま使える
   return (
     <footer className="flex">
       <ul className="pr-10 cursor-pointer">

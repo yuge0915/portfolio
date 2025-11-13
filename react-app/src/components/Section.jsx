@@ -1,6 +1,4 @@
-export default function Section(props) {
-  const { name, className } = props
-
+export default function Section({ name, className }) {
   return (
     <section
       className={`min-h-screen flex flex-col items-center justify-center px-8 py-20 relative overflow-hidden ${className}`}
