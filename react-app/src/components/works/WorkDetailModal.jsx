@@ -8,7 +8,7 @@ export default function WorkDetailModal({ work, onClose }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80 p-8"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80 p-4 sm:p-8"
       onClick={onClose}
     >
       <motion.div
@@ -16,20 +16,20 @@ export default function WorkDetailModal({ work, onClose }) {
         animate={{ scale: 1, opacity: 1 }}
         exit={{ scale: 0.9, opacity: 0 }}
         transition={{ type: 'spring', duration: 0.5 }}
-        className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto p-8 relative"
+        className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto p-4 sm:p-8 relative"
         onClick={e => e.stopPropagation()}
       >
         {/* 閉じるボタン */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-3xl text-gray-500 hover:text-gray-800 transition-colors w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100"
+          className="absolute top-3 right-3 sm:top-4 sm:right-4 text-2xl sm:text-3xl text-gray-500 hover:text-gray-800 transition-colors w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-full hover:bg-gray-100"
         >
           ✕
         </button>
 
-        <h2 className="text-4xl font-bold mb-4 pr-12">{work.title}</h2>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 pr-10 sm:pr-12">{work.title}</h2>
 
-        <div className="flex gap-3 mb-6 flex-wrap">
+        <div className="flex gap-2 sm:gap-3 mb-6 flex-wrap">
           <span className={`px-4 py-1 rounded-full ${work.tagClassName} text-white text-sm`}>
             {work.tag}
           </span>
@@ -44,7 +44,7 @@ export default function WorkDetailModal({ work, onClose }) {
 
         <div className="mb-6">
           <h3 className="text-2xl font-bold mb-3 text-gray-800">概要</h3>
-          <p className="text-gray-700 leading-relaxed text-lg">{work.description}</p>
+          <p className="text-gray-700 leading-relaxed text-base sm:text-lg">{work.description}</p>
         </div>
 
         <div className="mb-6">

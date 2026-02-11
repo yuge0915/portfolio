@@ -26,7 +26,7 @@ export default function About() {
       <Profile />
       <SkillConteiner />
 
-      <div className="flex justify-start pl-8 py-2 bg-white">
+      <div className="flex flex-col md:flex-row items-center md:items-center justify-start md:justify-start gap-3 md:gap-0 pl-4 md:pl-8 py-3 bg-white">
         <Footer
           name={'Tops'}
           className={'text-black'}

@@ -6,7 +6,7 @@ import Footer from './components/Footer'
 import { AnimatePresence } from 'framer-motion'
 import Works from './Works'
 import About from './About'
-import { useState, useEffect } from 'react'
+import { useState} from 'react'
 import { Routes, Route, useLocation, useNavigate } from 'react-router-dom'
 import Header from './components/Header'
 
@@ -38,12 +38,12 @@ function App() {
           element={
             <>
               <Top />
-              <div className="w-full h-screen">
+              <div className="w-full min-h-screen">
                 <SkillConteiner />
               </div>
               <Section name={'Contact'} className={''} />
 
-              <div className="flex justify-start pl-8 py-2 bg-white">
+              <div className="flex flex-col md:flex-row items-center md:items-center justify-start md:justify-start gap-3 md:gap-0 pl-4 md:pl-8 py-3 bg-white">
         <Footer
           name={'Tops'}
           className={'text-black'}
