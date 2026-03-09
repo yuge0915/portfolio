@@ -99,7 +99,7 @@ export default function Works() {
       title: 'バイカーの為のマップ',
       tag: 'チーム制作',
       text: 'webサイト',
-      image: 'https://placehold.jp/150x150.png',
+      image: '/portfolio/images/b-map.png',
       tagClassName: 'bg-orange-500',
       description: '4人で制作したバイカーの為のマップです。自分はデザインを中心に担当しフロントも少し担当しました、気をつけた点はバイカーの方が使うと想定したので視認性を第一にデザインしました、プロトタイプをする時間がなかったのでデプロイ品をお試しくださいhttps://b-map-tan.vercel.app/top',
       technologies: ['React', 'Tailwind CSS'],
