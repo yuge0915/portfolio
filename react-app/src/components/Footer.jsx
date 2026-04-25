@@ -1,11 +1,9 @@
 export default function Footer({ name, className, onClick }) {
   return (
-    <footer className="flex">
-      <ul className="pr-10 cursor-pointer">
-        <li className={`${className}`} onClick={onClick}>
-          {name}
-        </li>
-      </ul>
+    <footer className="flex pr-10">
+      <button type="button" className={className} onClick={onClick}>
+        {name}
+      </button>
     </footer>
   )
 }

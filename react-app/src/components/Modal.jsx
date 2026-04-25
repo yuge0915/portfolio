@@ -1,10 +1,8 @@
-import React from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
-function Modal(props) {
-  const setIsOpen = props.setIsOpen
-  const location = useLocation() // 現在のページのパスを取得
+function Modal({ setIsOpen }) {
+  const location = useLocation()
   const navigate = useNavigate()
 
   const handleLinkClick = (path, scrollTo) => {
@@ -26,7 +24,7 @@ function Modal(props) {
       animate={{ x: 0, opacity: 1 }}
       exit={{ x: '100%', opacity: 0 }}
       transition={{ type: 'tween', duration: 0.35, ease: 'easeOut' }}
-      className="fixed top-0 right-0 w-[20%] max-w-[320px] h-screen bg-[#3d3d3d] flex flex-col items-center justify-center gap-6 shadow-lg z-50"
+      className="fixed top-0 right-0 z-50 flex h-screen w-[20%] max-w-[320px] flex-col items-center justify-center gap-6 bg-[#3d3d3d] shadow-lg"
     >
       <nav className="flex flex-col gap-4 w-full px-auto">
         <button

@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function Header({ setIsOpen, isOpen, isWorkDetailModalOpen = false }) {
   const showMenu = !isOpen && !isWorkDetailModalOpen
 
