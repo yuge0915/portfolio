@@ -4,7 +4,7 @@ export default function About() {
       <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 w-full max-w-5xl">
         <div className="w-40 h-40 md:w-72 md:h-72 rounded-full overflow-hidden flex-shrink-0">
           <img
-            src="/portfolio/images/IMG_7351.PNG"
+            src="/images/IMG_7351.PNG"
             alt="about"
             className="w-full h-full object-cover"
           />

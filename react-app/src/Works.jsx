@@ -22,7 +22,7 @@ export default function Works({ onWorkDetailModalChange }) {
       title: 'バナー制作',
       tag: '個人制作',
       text: 'デザイン',
-      image: '/portfolio/images/irasuto.jpg',
+      image: '/images/irasuto.jpg',
       tagClassName: 'bg-blue-500',
       description: 'バナーを制作しました',
       technologies: ['Illustrator'],
@@ -33,7 +33,7 @@ export default function Works({ onWorkDetailModalChange }) {
       title: 'バナー制作',
       tag: '個人制作',
       text: 'デザイン',
-      image: '/portfolio/images/yuge.png',
+      image: '/images/yuge.png',
       tagClassName: 'bg-blue-500',
       description: '課題でバナーを制作しました',
       technologies: ['Photoshop'],
@@ -44,7 +44,7 @@ export default function Works({ onWorkDetailModalChange }) {
       title: '模写サイト',
       tag: '個人制作',
       text: 'webサイト',
-      image: '/portfolio/images/blood.jpeg',
+      image: '/images/blood.jpeg',
       tagClassName: 'bg-blue-500',
       description: '練習でサイトを模写しました。',
       technologies: ['HTML', 'CSS'],
@@ -54,7 +54,7 @@ export default function Works({ onWorkDetailModalChange }) {
       title: '模写サイト',
       tag: '個人制作',
       text: 'webサイト',
-      image: '/portfolio/images/bike.png',
+      image: '/images/bike.png',
       tagClassName: 'bg-blue-500',
       description: '練習でサイトを模写しました。',
       technologies: ['HTML', 'CSS'],
@@ -64,7 +64,7 @@ export default function Works({ onWorkDetailModalChange }) {
       title: 'バイカーの為のマップ',
       tag: 'チーム制作',
       text: 'webサイト',
-      image: '/portfolio/images/b-map.png',
+      image: '/images/b-map.png',
       tagClassName: 'bg-orange-500',
       description:
         '4人で制作したバイカーの為のマップです。自分はデザインを中心に担当しフロントも少し担当しました、気をつけた点はバイカーの方が使うと想定したので視認性を第一にデザインしました、プロトタイプをする時間がなかったのでデプロイ品をお試しくださいhttps://b-map-tan.vercel.app/top',
@@ -75,7 +75,7 @@ export default function Works({ onWorkDetailModalChange }) {
       title: 'ファミレスタッチパネル',
       tag: 'チーム制作',
       text: 'webサイト',
-      image: '/portfolio/images/mantan.png',
+      image: '/images/mantan.png',
       tagClassName: 'bg-orange-500',
       description: `ガストやデニーズなど複数の飲食店に実際に足を運び、既存のセルフオーダー端末における操作のしづらさや情報の伝わりにくさを体験。その課題感をもとに、「直感的で迷わない操作体験」 を軸としたUIデザインを制作しました。
 トップ画面から注文完了までの視線誘導を意識した画面構成、カテゴリ一覧と商品カードの情報設計、ページナビゲーション、注文履歴の見せ方まで、一貫したUXの流れとして設計しています。タブレット端末での操作性を考慮し、タップしやすいターゲットサイズや余白の確保にも配慮しました。
@@ -87,7 +87,7 @@ export default function Works({ onWorkDetailModalChange }) {
       title: 'ポートフォリオサイト',
       tag: '個人制作',
       text: 'webサイト',
-      image: '/portfolio/images/portfolio.png',
+      image: '/images/portfolio.png',
       tagClassName: 'bg-blue-500',
       description:
         '初めてReactを用いた開発に挑戦し、試行錯誤を重ねながらも、直感的に操作できるUIを実現しました。本ポートフォリオでは、「伝わる・使える」を軸に、デザインと実装の両面からユーザー体験を検証しています。レイアウトや配色は、見た目の美しさだけでなく、利用シーンを想定した視認性と操作性を重視して設計しました。Figmaでの設計意図をそのまま体験に落とし込むため、ReactとTailwindで一貫した実装を行っています。',
@@ -98,7 +98,7 @@ export default function Works({ onWorkDetailModalChange }) {
       title: 'iPhoneインスタ用広告バナー',
       tag: '個人制作',
       text: 'デザイン',
-      image: '/portfolio/images/iphone.png',
+      image: '/images/iphone.png',
       tagClassName: 'bg-blue-500',
       description: `学校の課題でiPhone広告バナーを制作しました。最初にターゲットを決めて、そのターゲットに合わせてバナーを制作しました。その分析結果が下記のものです。
     iPhone広告バナー企画 ■ ターゲット都市部に住む女子学生機種変更を検討しており、トレンドや周囲の影響を受けやすい層■ ペルソナ学生（可処分所得が少ない）無料キャンペーンや抽選に積極的
@@ -156,7 +156,7 @@ SNS・友人関係を重視
       title: 'fitnessアプリ',
       tag: 'チーム制作',
       text: 'webサイト',
-      image: '/portfolio/images/cofit.png',
+      image: '/images/cofit.png',
       tagClassName: 'bg-orange-500',
       description:
         'RIZAP様との産業連携プロジェクトで、5名チームによるフィットネスアプリのプロトタイプ制作に参加し、UIデザインを中心に担当しました。メインカラーには緑を採用しました。緑は自然・健康・成長を連想させる色であり、フィットネスというドメインとの親和性が高く、ユーザーに「体を動かす気持ちよさ」や「着実な成長」を視覚的に伝えられると考えました。また、フィットネス系アプリには赤・オレンジといった暖色系が多く使われる傾向があり、差別化を意識して寒色〜中間色の中から選定。緑は「落ち着き」と「活力」を両立できる色として最適と判断しました。ターゲット層は若者で昨今の若者は運動量が足りないので若者に使ってもらえるアプリというお題でした。プロトタイプはFigmaで公開しています。よろしければご覧ください。https://www.figma.com/proto/2vEMtjZfFxe7lPKvcnjk7h/Cofit?node-id=0-1&t=Lqk27pyFzRZvyvPu-1',
