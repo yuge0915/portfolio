@@ -1,0 +1,61 @@
+---
+description: React + Vite + Tailwind 製ポートフォリオサイト向けのコーディング標準。ルーティング、Tailwind、コンポーネント分割の方針をまとめる。
+alwaysApply: true
+---
+
+# React Portfolio Standards
+
+このリポジトリで AI エージェントがコードを書くときに、必ず意識してほしいルールです。詳細な説明はプロジェクトルートの `AGENT.md` を参照してください。
+
+## 技術スタック前提
+
+- React 18（関数コンポーネントのみ）
+- Vite 7（ESM）
+- Tailwind CSS 4（ユーティリティファースト）
+- React Router（`HashRouter` 利用）
+- Framer Motion（アニメーション）
+
+## 構造と役割
+
+- 画面単位のコンポーネントは `pages/` に置く（Top/Works/About など）
+- 複数ページで共有する UI は `components/` に置く（ヘッダー、フッター、モーダルなど）
+- Works 固有の UI は `components/works/` に置く（カード、詳細モーダルなど）
+- 作品データなどの静的データは `data/` に切り出すことを優先する
+
+## コンポーネント設計
+
+- 1コンポーネント1責務（レイアウト/状態管理と表示専用を分ける）
+- コンポーネント名とファイル名は揃える（例: `WorkDetailModal` ↔ `WorkDetailModal.jsx`）
+- Props は必ず分割代入する（`function Card({ work, onClick }) { ... }`）
+- 子コンポーネントには「表示データ」と「イベントハンドラ」のみを渡す
+
+## ルーティングとスクロール
+
+- ルーティングは `HashRouter` + `Routes` を前提とする
+- ページをまたいだスクロール位置指定は `navigate(path, { state: { scrollTo } })` パターンを使う
+- 同一ページ内スクロールは `document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })` パターンを踏襲してよいが、`id` 名は `top` / `works` / `about` など一貫させる
+
+## Tailwind の使い方
+
+- クラス名は「レイアウト → 余白 → タイポ/色 → 状態」の順に並べて読みやすくする
+- 色は Tailwind の標準トークン（`bg-gray-900`, `text-white` 等）を優先し、必要になったら `tailwind.config.js` にカスタムカラーを追加する
+- インラインスタイルは避ける（アニメーションや Tailwind で表現しづらいケースのみ例外）
+
+## アニメーション / モーダル
+
+- アニメーションには Framer Motion を使う（`AnimatePresence` でモーダルのマウント/アンマウントを制御する）
+- モーダルの開閉状態は親コンポーネント側で管理し、`setIsOpen` / `onClose` などのコールバックを渡す
+
+## Hooks と状態
+
+- 画面全体の状態は `App` や `pages/*` で管理し、子はできるだけ「見た目専用」に近づける
+- `useEffect` は副作用専用にし、依存配列は ESLint の警告に従って正しく書く
+- リストレンダリングでは必ず安定した `id` を `key` に使う
+
+## NG 例（避けること）
+
+- 役割が混ざった巨大コンポーネントを新たに増やすこと
+- ランダムなハードコード色やインラインスタイルを多用すること
+- `useEffect` の依存配列を空のまま固定し、警告を無視すること
+- クリックイベントを持つ `div` / `span` を新しく増やすこと（`button` を使う）
+
