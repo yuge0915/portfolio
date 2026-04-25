@@ -28,22 +28,22 @@ function Modal(props) {
       transition={{ type: 'tween', duration: 0.35, ease: 'easeOut' }}
       className="fixed top-0 right-0 w-[20%] max-w-[320px] h-screen bg-[#3d3d3d] flex flex-col items-center justify-center gap-6 shadow-lg z-50"
     >
-      <nav className="flex flex-col gap-4 w-full px-8">
+      <nav className="flex flex-col gap-4 w-full px-auto">
         <button
           onClick={() => handleLinkClick('/', 'top')}
-          className="text-white hover:text-gray-300 transition-colors py-3 text-center text-lg font-medium bg-transparent border-none cursor-pointer"
+          className="text-white hover:text-gray-300 transition-colors py-3 text-center text-lg font-medium bg-transparent border-none cursor-pointer text-[clamp(15px,3vw,3.5rem)] "
         >
           Top
         </button>
         <button
           onClick={() => handleLinkClick('/works', 'works')}
-          className="text-white hover:text-gray-300 transition-colors py-3 text-center text-lg font-medium bg-transparent border-none cursor-pointer"
+          className="text-white hover:text-gray-300 transition-colors py-3 text-center text-lg font-medium bg-transparent border-none cursor-pointer text-[clamp(15px,3vw,3.5rem)] "
         >
           Works
         </button>
         <button
           onClick={() => handleLinkClick('/about', 'about')}
-          className="text-white hover:text-gray-300 transition-colors py-3 text-center text-lg font-medium bg-transparent border-none cursor-pointer"
+          className="text-white hover:text-gray-300 transition-colors py-3  text-lg font-medium bg-transparent border-none cursor-pointer text-[clamp(15px,3vw,3.5rem)] "
         >
           About
         </button>

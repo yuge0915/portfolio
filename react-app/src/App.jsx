@@ -6,14 +6,15 @@ import Footer from './components/Footer'
 import { AnimatePresence } from 'framer-motion'
 import Works from './Works'
 import About from './About'
-import { useState} from 'react'
+import { useState } from 'react'
 import { Routes, Route, useLocation, useNavigate } from 'react-router-dom'
 import Header from './components/Header'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
-  const location = useLocation() 
-  const navigate = useNavigate()  
+  const [isWorkDetailModalOpen, setIsWorkDetailModalOpen] = useState(false)
+  const location = useLocation()
+  const navigate = useNavigate()
 
   const handleLinkClick = (path, scrollTo) => {
     if (location.pathname === path && scrollTo) {
@@ -29,7 +30,7 @@ function App() {
 
   return (
     <>
-      <Header setIsOpen={setIsOpen} isOpen={isOpen} />
+      <Header setIsOpen={setIsOpen} isOpen={isOpen} isWorkDetailModalOpen={isWorkDetailModalOpen} />
       <AnimatePresence>{isOpen && <Modal setIsOpen={setIsOpen} />}</AnimatePresence>
 
       <Routes>
@@ -44,30 +45,33 @@ function App() {
               <Section name={'Contact'} className={''} />
 
               <div className="flex flex-col md:flex-row items-center md:items-center justify-start md:justify-start gap-3 md:gap-0 pl-4 md:pl-8 py-3 bg-white">
-        <Footer
-          name={'Tops'}
-          className={'text-black'}
-          onClick={() => handleLinkClick('/', 'top')}
-        />
+                <Footer
+                  name={'Top'}
+                  className={'text-black'}
+                  onClick={() => handleLinkClick('/', 'top')}
+                />
 
-        <Footer
-          name={'Works'}
-          className={'text-black'}
-          onClick={() => handleLinkClick('/works', 'works')}
-        />
+                <Footer
+                  name={'Works'}
+                  className={'text-black'}
+                  onClick={() => handleLinkClick('/works', 'works')}
+                />
 
-        <Footer
-          name={'About'}
-          className={'text-black'}
-          onClick={() => handleLinkClick('/about', 'about')}
-        />
+                <Footer
+                  name={'About'}
+                  className={'text-black'}
+                  onClick={() => handleLinkClick('/about', 'about')}
+                />
 
-        <small className="ml-auto pr-5 text-white">© 2025 AYUMI YUGE</small>
-      </div>
+                <small className="ml-auto pr-5 text-white">© 2025 AYUMI YUGE</small>
+              </div>
             </>
           }
         />
-        <Route path="/works" element={<Works />} />
+        <Route
+          path="/works"
+          element={<Works onWorkDetailModalChange={setIsWorkDetailModalOpen} />}
+        />
         <Route path="/about" element={<About />} />
       </Routes>
     </>

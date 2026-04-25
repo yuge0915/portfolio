@@ -30,13 +30,13 @@ export default function SkillConteiner() {
               <h3 className="text-2xl font-bold text-white mb-6">Web Development</h3>
               <SkillBar skill="HTML" level={80} color="#9fe3ff" />
               <SkillBar skill="CSS" level={50} color="#9fe3ff" />
-              <SkillBar skill="JavaScript" level={40} color="#7ddfff" />
+              <SkillBar skill="JavaScript" level={30} color="#7ddfff" />
             </div>
 
             {/* 右側のスキル（デザイン系）*/}
             <div className="flex-1">
               <h3 className="text-2xl font-bold text-white mb-6">Design Tools</h3>
-              <SkillBar skill="Photoshop" level={50} color="#f97316" />
+              <SkillBar skill="Photoshop" level={40} color="#f97316" />
               <SkillBar skill="Illustrator" level={30} color="#fb923c" />
               <SkillBar skill="Figma" level={60} color="#fdba74" />
             </div>
