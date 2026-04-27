@@ -40,7 +40,7 @@ export const worksData = [
     tag: 'チーム制作',
     text: 'webサイト',
     image: '/images/mantan1.jpeg',
-    images: ['/images/mantan2.jpeg','/images/mantan3.jpeg','/images/mantan4.jpeg'],
+    images: ['/images/mantan1.jpeg','/images/mantan2.jpeg','/images/mantan3.jpeg','/images/mantan4.jpeg'],
     tagClassName: 'bg-orange-500',
     summary: 'セルフオーダー端末の課題を改善するUIを設計したチーム制作です。',
     description: `ガストやデニーズなど複数の飲食店に実際に足を運び、既存のセルフオーダー端末における操作のしづらさや情報の伝わりにくさを体験。その課題感をもとに、「直感的で迷わない操作体験」 を軸としたUIデザインを制作しました。
