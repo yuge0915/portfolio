@@ -69,7 +69,7 @@ export const worksData = [
   },
   {
     id: 10,
-    title: '広告バナー',
+    title: '広告バナー制作',
     tag: '個人制作',
     text: 'デザイン',
     image: '/images/iphone.png',
