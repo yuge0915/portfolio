@@ -1,31 +1,12 @@
 export const worksData = [
   {
-    id: 7,
-    title: 'バナー制作',
-    tag: '個人制作',
-    text: 'デザイン',
-    image: '/images/irasuto.jpg',
-    tagClassName: 'bg-blue-500',
-    description: 'バナーを制作しました',
-    technologies: ['Illustrator'],
-  },
-  {
-    id: 5,
-    title: 'バナー制作',
-    tag: '個人制作',
-    text: 'デザイン',
-    image: '/images/yuge.png',
-    tagClassName: 'bg-blue-500',
-    description: '課題でバナーを制作しました',
-    technologies: ['Photoshop'],
-  },
-  {
     id: 3,
     title: '模写サイト',
     tag: '個人制作',
     text: 'webサイト',
     image: '/images/blood.jpeg',
     tagClassName: 'bg-blue-500',
+    summary: '既存サイトを模写し、レイアウトと余白設計を学んだ制作です。',
     description: '練習でサイトを模写しました。',
     technologies: ['HTML', 'CSS'],
   },
@@ -36,6 +17,7 @@ export const worksData = [
     text: 'webサイト',
     image: '/images/bike.png',
     tagClassName: 'bg-blue-500',
+    summary: 'トンマナの再現と実装精度を意識して取り組んだ模写制作です。',
     description: '練習でサイトを模写しました。',
     technologies: ['HTML', 'CSS'],
   },
@@ -46,21 +28,32 @@ export const worksData = [
     text: 'webサイト',
     image: '/images/b-map.png',
     tagClassName: 'bg-orange-500',
+    summary: 'バイカー向けに視認性を重視して設計したチーム開発のマップです。',
     description:
-      '4人で制作したバイカーの為のマップです。自分はデザインを中心に担当しフロントも少し担当しました、気をつけた点はバイカーの方が使うと想定したので視認性を第一にデザインしました、プロトタイプをする時間がなかったのでデプロイ品をお試しくださいhttps://b-map-tan.vercel.app/top',
+      '4人で制作した、バイカー向けのマップアプリです。\n\n私はデザインを中心に、一部フロント実装も担当しました。屋外利用を想定し、情報の読み取りやすさを最優先にレイアウトと配色を設計しています。',
     technologies: ['React', 'Tailwind CSS'],
+    links: [{ label: 'デプロイ版を見る', url: 'https://b-map-tan.vercel.app/top' }],
   },
   {
     id: 4,
     title: 'ファミレスタッチパネル',
     tag: 'チーム制作',
     text: 'webサイト',
-    image: '/images/mantan.png',
+    image: '/images/mantan1.jpeg',
+    images: ['/images/mantan2.jpeg','/images/mantan3.jpeg','/images/mantan4.jpeg'],
     tagClassName: 'bg-orange-500',
+    summary: 'セルフオーダー端末の課題を改善するUIを設計したチーム制作です。',
     description: `ガストやデニーズなど複数の飲食店に実際に足を運び、既存のセルフオーダー端末における操作のしづらさや情報の伝わりにくさを体験。その課題感をもとに、「直感的で迷わない操作体験」 を軸としたUIデザインを制作しました。
-トップ画面から注文完了までの視線誘導を意識した画面構成、カテゴリ一覧と商品カードの情報設計、ページナビゲーション、注文履歴の見せ方まで、一貫したUXの流れとして設計しています。タブレット端末での操作性を考慮し、タップしやすいターゲットサイズや余白の確保にも配慮しました。
-配色は視認性を優先し、選択状態・操作可能/不可の状態を色で明確に区別。アレルギー情報はアイコン化することで、文字を読み込まなくても瞬時に判断できるよう設計しました。実際の店舗利用を想定した、わかりやすさと安心感を両立したUI です。プロトタイプですので良かったら閲覧くださいhttps://www.figma.com/proto/5Ssv9FJQed3e4JeSTH3Wpp/%E3%82%AF%E3%83%A9%E3%83%81%E3%83%BC%E3%83%A0?page-id=0%3A1&node-id=19-42&p=f&viewport=322%2C376%2C0.05&t=Cuoe0XCOdmca4AP2-9&scaling=scale-down&content-scaling=fixed&starting-point-node-id=385%3A4983&show-proto-sidebar=1`,
+トップ画面から注文完了までの視線誘導を意識した画面構成、カテゴリ一覧と商品カードの情報設計、ページナビゲーション、注文履歴の見せ方まで、一貫したUXの流れとして設計しています。
+
+タブレット端末での操作性を考慮し、タップしやすいターゲットサイズと余白を確保しました。配色は視認性を重視し、選択状態や操作可否を色で明確に区別しています。`,
     technologies: ['html', 'css', 'javascript'],
+    links: [
+      {
+        label: 'Figmaプロトタイプを見る',
+        url: 'https://www.figma.com/proto/5Ssv9FJQed3e4JeSTH3Wpp/%E3%82%AF%E3%83%A9%E3%83%81%E3%83%BC%E3%83%A0?page-id=0%3A1&node-id=19-42&p=f&viewport=322%2C376%2C0.05&t=Cuoe0XCOdmca4AP2-9&scaling=scale-down&content-scaling=fixed&starting-point-node-id=385%3A4983&show-proto-sidebar=1',
+      },
+    ],
   },
   {
     id: 1,
@@ -69,77 +62,44 @@ export const worksData = [
     text: 'webサイト',
     image: '/images/portfolio.png',
     tagClassName: 'bg-blue-500',
+    summary: 'React と Tailwind で構築した、自身のポートフォリオサイトです。',
     description:
       '初めてReactを用いた開発に挑戦し、試行錯誤を重ねながらも、直感的に操作できるUIを実現しました。本ポートフォリオでは、「伝わる・使える」を軸に、デザインと実装の両面からユーザー体験を検証しています。レイアウトや配色は、見た目の美しさだけでなく、利用シーンを想定した視認性と操作性を重視して設計しました。Figmaでの設計意図をそのまま体験に落とし込むため、ReactとTailwindで一貫した実装を行っています。',
     technologies: ['React', 'Tailwind CSS'],
   },
   {
     id: 10,
-    title: 'iPhoneインスタ用広告バナー',
+    title: '広告バナー',
     tag: '個人制作',
     text: 'デザイン',
     image: '/images/iphone.png',
+    images: ['/images/iphone.png', '/images/yuge.png', '/images/irasuto.jpg',],
     tagClassName: 'bg-blue-500',
-    description: `学校の課題でiPhone広告バナーを制作しました。最初にターゲットを決めて、そのターゲットに合わせてバナーを制作しました。その分析結果が下記のものです。
-    iPhone広告バナー企画 ■ ターゲット都市部に住む女子学生機種変更を検討しており、トレンドや周囲の影響を受けやすい層■ ペルソナ学生（可処分所得が少ない）無料キャンペーンや抽選に積極的
-SNS・友人関係を重視
-「みんなと同じ」「流行っている」を選びやすい
-■ 課題
-スマートフォンの買い替えコストが高い
-まだ使えるが、古くなっている端末への不満
-機種変更のきっかけが不足している
-■ ニーズ
-できれば無料で最新機種を手に入れたい
-お得に乗り換えたい
-新生活のタイミングで環境を変えたい
-■ インサイト（深層心理）
-「周りがiPhoneだから自分も揃えたい」
-「どうせ変えるなら今っぽい体験をしたい」
-「お得に手に入るならすぐ動きたい」
-■ 目的
+    summary: 'いくつかのバナーを制作しました。',
+    description: `いくつか学校課題として作りましたので一つだけ紹介します、iPhone広告バナーを制作しました。
 
-他社からUQ mobileへの乗り換え促進
+ターゲットを「都市部に住む女子学生」に設定し、トレンド性と参加したくなるお得感を重視して情報設計しています。
 
-■ 提供価値（ベネフィット）
-最新iPhoneを持つことで
-→ 友人とのコミュニケーションが広がる
-→ トレンドに乗れる安心感
-抽選という「ワクワク体験」
-無料で手に入る可能性による強い動機付け
-■ クリエイティブ戦略
-コンセプト
-
-👉 「新生活 × 無料 × みんなと一緒」
-
-訴求軸
-最新モデル（iPhone16 Pro）
-無料（抽選）
-限定感（乗り換え限定）
-お得感（総額〇〇万円）
-トーン＆マナー
-水色 × 桜色（春・新生活・やわらかさ）
-明るくポジティブ
-親しみやすくトレンド感のあるデザイン
-■ キーメッセージ
-他社からUQ mobileに乗り換えた方限定
-抽選でiPhone16 Proが当たる
-新生活応援キャンペーン
-総額〇〇万円分プレゼント
-■ 期待する行動
-
-👉 キャンペーンへのエントリー
-👉 SIM乗り換えの検討・実行`,
-    technologies: ['Photoshop'],
+コンセプトは「新生活 × 無料 × みんなと一緒」。水色と桜色を軸に、春らしさと親しみやすさを両立したトーンで制作しました。`,
+    technologies: ['Photoshop','Illustrator'],
   },
   {
     id: 8,
     title: 'fitnessアプリ',
     tag: 'チーム制作',
     text: 'webサイト',
-    image: '/images/cofit.png',
+    image: '/images/cofitComplete.jpeg',
+    images: ['/images/cofitComplete.jpeg','/images/home.jpeg','/images/login.jpeg'],
     tagClassName: 'bg-orange-500',
+    summary: 'RIZAP様連携PJで制作した、若年層向けフィットネスアプリのUIです。',
     description:
-      'RIZAP様との産業連携プロジェクトで、5名チームによるフィットネスアプリのプロトタイプ制作に参加し、UIデザインを中心に担当しました。メインカラーには緑を採用しました。緑は自然・健康・成長を連想させる色であり、フィットネスというドメインとの親和性が高く、ユーザーに「体を動かす気持ちよさ」や「着実な成長」を視覚的に伝えられると考えました。また、フィットネス系アプリには赤・オレンジといった暖色系が多く使われる傾向があり、差別化を意識して寒色〜中間色の中から選定。緑は「落ち着き」と「活力」を両立できる色として最適と判断しました。ターゲット層は若者で昨今の若者は運動量が足りないので若者に使ってもらえるアプリというお題でした。プロトタイプはFigmaで公開しています。よろしければご覧ください。https://www.figma.com/proto/2vEMtjZfFxe7lPKvcnjk7h/Cofit?node-id=0-1&t=Lqk27pyFzRZvyvPu-1',
+      'RIZAP様との産業連携プロジェクトで、5名チームによるフィットネスアプリのプロトタイプ制作に参加し、UIデザインを担当しました。\n\nメインカラーには緑を採用し、「健康」「成長」「継続しやすさ」を視覚的に伝えることを狙っています。若年層をターゲットに、使い始めのハードルを下げる構成を意識しました。',
     technologies: ['Next.js', 'Tailwind CSS'],
+    links: [
+      {
+        label: 'Figmaプロトタイプを見る',
+        url: 'https://www.figma.com/proto/2vEMtjZfFxe7lPKvcnjk7h/Cofit?node-id=0-1&t=Lqk27pyFzRZvyvPu-1',
+      },
+    ],
   },
 ]

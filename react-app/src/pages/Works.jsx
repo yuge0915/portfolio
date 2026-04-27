@@ -3,7 +3,7 @@ import { AnimatePresence } from 'framer-motion'
 import { useLocation, useNavigate } from 'react-router-dom'
 
 import PageFooterNav from '../components/PageFooterNav'
-import Card from '../components/works/Card'
+import WorkCard from '../components/works/WorkCard'
 import WorkDetailModal from '../components/works/WorkDetailModal'
 import { worksData } from '../data/worksData'
 
@@ -38,11 +38,13 @@ export default function Works({ onWorkDetailModalChange }) {
           Works
         </h1>
 
-        <div className="mb-12 flex flex-wrap items-center justify-center gap-8 px-4 sm:px-6 md:px-8">
+        <p className="mx-auto mb-8 max-w-3xl px-4 text-center text-sm leading-relaxed text-gray-100 sm:text-base">
+          サムネイル一覧から、制作ジャンルやテイストを比較しやすい構成にしています。気になる作品を選ぶと、完成イメージと制作意図を詳細で確認できます。
+        </p>
+
+        <div className="mx-auto mb-12 grid max-w-6xl grid-cols-1 gap-5 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-3 lg:px-8">
           {[...worksData].reverse().map(work => (
-            <div key={work.id}>
-              <Card work={work} onClick={setSelectedWork} />
-            </div>
+            <WorkCard key={work.id} work={work} onClick={setSelectedWork} />
           ))}
         </div>
 
