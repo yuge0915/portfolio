@@ -68,20 +68,44 @@ export const worksData = [
     technologies: ['React', 'Tailwind CSS'],
   },
   {
+    id: 12,
+    title: '模写制作',
+    tag: '個人制作',
+    text: '模写',
+    image: '/images/500p.png',
+    images: ['/images/500p.png'],
+    tagClassName: 'bg-blue-500',
+    summary: '500ポイントのバナーを模写しました。',
+    description: '500ポイントのバナーを模写しました。',
+    technologies: ['Figma'],
+  },
+  {
+    id: 11,
+    title: '模写制作',
+    tag: '個人制作',
+    text: '模写',
+    image: '/images/osechi.jpg',
+    images: ['/images/osechi.jpg'],
+    tagClassName: 'bg-blue-500',
+    summary: 'お正月用の模写制作です。',
+    description: 'お正月用の模写制作です。',
+    technologies: ['Figma'],
+  },
+  {
     id: 10,
     title: '広告バナー制作',
     tag: '個人制作',
     text: 'デザイン',
     image: '/images/iphone.png',
-    images: ['/images/iphone.png', '/images/yuge.png', '/images/irasuto.jpg',],
+    images: ['/images/iphone.png'],
     tagClassName: 'bg-blue-500',
-    summary: 'いくつかのバナーを制作しました。',
-    description: `いくつか学校課題として作りましたので一つだけ紹介します、iPhone広告バナーを制作しました。
+    summary: 'iPhone広告バナーを制作しました。ターゲットを「都市部に住む女子学生」に設定し、トレンド性と参加したくなるお得感を重視して情報設計しています。',
+    description: `学校課題として作りましたので一つだけ紹介します、iPhone広告バナーを制作しました。
 
 ターゲットを「都市部に住む女子学生」に設定し、トレンド性と参加したくなるお得感を重視して情報設計しています。
 
 コンセプトは「新生活 × 無料 × みんなと一緒」。水色と桜色を軸に、春らしさと親しみやすさを両立したトーンで制作しました。`,
-    technologies: ['Photoshop','Illustrator'],
+    technologies: ['Photoshop'],
   },
   {
     id: 8,

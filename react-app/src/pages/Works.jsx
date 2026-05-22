@@ -3,7 +3,7 @@ import { AnimatePresence } from 'framer-motion'
 import { useLocation, useNavigate } from 'react-router-dom'
 
 import PageFooterNav from '../components/PageFooterNav'
-import WorkCard from '../components/works/WorkCard'
+import WorksGrid from '../components/works/WorksGrid'
 import WorkDetailModal from '../components/works/WorkDetailModal'
 import { worksData } from '../data/worksData'
 
@@ -33,20 +33,17 @@ export default function Works({ onWorkDetailModalChange }) {
 
   return (
     <>
-      <div id="works" className="min-h-screen bg-gray-500">
-        <h1 className="flex items-center justify-center px-4 pt-24 pb-10 text-center text-4xl font-bold text-white sm:text-5xl md:text-6xl">
+      <div id="works" className="min-h-screen bg-gray-900">
+        <h1 className="flex items-center justify-center px-4 pt-24 pb-10 text-center text-4xl font-bold text-white sm:text-5xl md:text-6xl bg-black">
           Works
         </h1>
-
-        <p className="mx-auto mb-8 max-w-3xl px-4 text-center text-sm leading-relaxed text-gray-100 sm:text-base">
+        <div className="bg-gradient-to-br bg-black">
+        <p className="mx-auto max-w-3xl px-4 text-center text-sm leading-relaxed text-gray-100 sm:text-base  bg-black">
           サムネイル一覧から、制作ジャンルやテイストを比較しやすい構成にしています。気になる作品を選ぶと、完成イメージと制作意図を詳細で確認できます。
         </p>
-
-        <div className="mx-auto mb-12 grid max-w-6xl grid-cols-1 gap-5 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-3 lg:px-8">
-          {[...worksData].reverse().map(work => (
-            <WorkCard key={work.id} work={work} onClick={setSelectedWork} />
-          ))}
         </div>
+
+        <WorksGrid works={worksData} onWorkClick={setSelectedWork} />
 
         <PageFooterNav onNavigate={handleLinkClick} copyrightClassName="text-gray-500 text-xs md:text-sm" />
       </div>
