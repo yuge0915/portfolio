@@ -68,6 +68,19 @@ export const worksData = [
     technologies: ['React', 'Tailwind CSS'],
   },
   {
+    id: 13,
+    title: '模写制作',
+    tag: '個人制作',
+    text: '模写',
+    image: '/images/pointzakuzaku.jpg',
+    images: ['/images/pointzakuzaku.jpg'],
+    tagClassName: 'bg-blue-500',
+    summary: 'ポイントザクザクのバナーを模写しました。',
+    description: 'ポイントザクザクのバナーを模写しました。',
+    technologies: ['Figma'],
+
+  },
+  {
     id: 12,
     title: '模写制作',
     tag: '個人制作',
