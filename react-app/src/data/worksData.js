@@ -22,19 +22,6 @@ export const worksData = [
     technologies: ['HTML', 'CSS'],
   },
   {
-    id: 9,
-    title: 'バイカーの為のマップ',
-    tag: 'チーム制作',
-    text: 'webサイト',
-    image: '/images/b-map.png',
-    tagClassName: 'bg-orange-500',
-    summary: 'バイカー向けに視認性を重視して設計したチーム開発のマップです。',
-    description:
-      '4人で制作した、バイカー向けのマップアプリです。\n\n私はデザインを中心に、一部フロント実装も担当しました。屋外利用を想定し、情報の読み取りやすさを最優先にレイアウトと配色を設計しています。',
-    technologies: ['React', 'Tailwind CSS'],
-    links: [{ label: 'デプロイ版を見る', url: 'https://b-map-tan.vercel.app/top' }],
-  },
-  {
     id: 4,
     title: 'ファミレスタッチパネル',
     tag: 'チーム制作',
