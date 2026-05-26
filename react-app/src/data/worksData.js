@@ -87,8 +87,8 @@ export const worksData = [
     image: '/images/osechi.jpg',
     images: ['/images/osechi.jpg'],
     tagClassName: 'bg-blue-500',
-    summary: 'お正月用の模写制作です。',
-    description: 'お正月用の模写制作です。',
+    summary: 'お正月用おせちの模写制作です。',
+    description: 'お正月用おせちの模写制作です。',
     technologies: ['Figma'],
   },
   {
