@@ -50,7 +50,7 @@ function Modal({ setIsOpen }) {
 
       <button
         type="button"
-        className="mt-4 w-full min-h-12 shrink-0 cursor-pointer rounded-lg border border-zinc-700 bg-zinc-800 px-6 py-3.5 text-base font-medium text-white shadow-md transition-all duration-200 hover:border-zinc-600 hover:bg-zinc-700 hover:shadow-lg"
+        className="mb-8 mt-4 w-full min-h-12 shrink-0 cursor-pointer rounded-lg border border-zinc-700 bg-zinc-800 px-6 py-3.5 text-base font-medium text-white shadow-md transition-all duration-200 hover:border-zinc-600 hover:bg-zinc-700 hover:shadow-lg"
         onClick={() => setIsOpen(false)}
         aria-label="メニューを閉じる"
       >
