@@ -13,7 +13,7 @@ import Works from './pages/Works'
 import About from './pages/About'
 import { worksData } from './data/worksData'
 
-const HOME_WORKS_PREVIEW = [...worksData].reverse().slice(0, 5)
+const HOME_WORKS_PREVIEW = [...worksData].reverse().slice(0, 4)
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
