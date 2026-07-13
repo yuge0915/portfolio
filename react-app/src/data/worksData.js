@@ -7,7 +7,8 @@ export const worksData = [
     image: '/images/blood.jpeg',
     tagClassName: 'bg-blue-500',
     summary: '既存サイトを模写し、レイアウトと余白設計を学んだ制作です。',
-    description: '練習でサイトを模写しました。',
+    description:
+      '練習として既存サイトを模写しました。画像やテキストの配置、セクション間の余白など、レイアウト設計の基礎を意識して実装しています。',
     technologies: ['HTML', 'CSS'],
   },
   {
@@ -18,7 +19,8 @@ export const worksData = [
     image: '/images/bike.png',
     tagClassName: 'bg-blue-500',
     summary: 'トンマナの再現と実装精度を意識して取り組んだ模写制作です。',
-    description: '練習でサイトを模写しました。',
+    description:
+      '練習として既存サイトを模写しました。配色やフォント、コンポーネントの細部までトンマナを再現し、デザイン通りに忠実に実装する精度を高めることを意識して取り組みました。',
     technologies: ['HTML', 'CSS'],
   },
   {
@@ -30,7 +32,7 @@ export const worksData = [
     images: ['/images/mantan1.jpeg','/images/mantan2.jpeg','/images/mantan3.jpeg','/images/mantan4.jpeg'],
     tagClassName: 'bg-orange-500',
     summary: 'セルフオーダー端末の課題を改善するUIを設計したチーム制作です。',
-    description: `ガストやデニーズなど複数の飲食店に実際に足を運び、既存のセルフオーダー端末における操作のしづらさや情報の伝わりにくさを体験。その課題感をもとに、「直感的で迷わない操作体験」 を軸としたUIデザインを制作しました。
+    description: `ガストやデニーズなど複数の飲食店に実際に足を運び、既存のセルフオーダー端末における操作のしづらさや情報の伝わりにくさを体験。その課題感をもとに、「直感的で迷わない操作体験」を軸としたUIデザインを制作しました。
 トップ画面から注文完了までの視線誘導を意識した画面構成、カテゴリ一覧と商品カードの情報設計、ページナビゲーション、注文履歴の見せ方まで、一貫したUXの流れとして設計しています。
 
 タブレット端末での操作性を考慮し、タップしやすいターゲットサイズと余白を確保しました。配色は視認性を重視し、選択状態や操作可否を色で明確に区別しています。`,
@@ -63,9 +65,9 @@ export const worksData = [
     images: ['/images/pointzakuzaku.jpg'],
     tagClassName: 'bg-blue-500',
     summary: 'ポイントザクザクのバナーを模写しました。',
-    description: 'ポイントザクザクのバナーを模写しました。',
+    description:
+      'ポイントザクザクのバナーを模写しました。配色や文字組み、訴求レイアウトの再現を通じて、広告バナーの情報設計を学びました。',
     technologies: ['Figma'],
-
   },
   {
     id: 12,
@@ -76,7 +78,8 @@ export const worksData = [
     images: ['/images/500p.png'],
     tagClassName: 'bg-blue-500',
     summary: '500ポイントのバナーを模写しました。',
-    description: '500ポイントのバナーを模写しました。',
+    description:
+      '500ポイント訴求のバナーを模写しました。キャンペーン訴求の見せ方や数字の強調方法など、バナー特有の情報設計を意識して制作しました。',
     technologies: ['Figma'],
   },
   {
@@ -88,7 +91,8 @@ export const worksData = [
     images: ['/images/osechi.jpg'],
     tagClassName: 'bg-blue-500',
     summary: 'お正月用おせちの模写制作です。',
-    description: 'お正月用おせちの模写制作です。',
+    description:
+      'お正月向けおせちのバナーを模写しました。季節感のある配色や商品写真の見せ方など、販促バナーとしての訴求表現を意識して取り組みました。',
     technologies: ['Figma'],
   },
   {
@@ -99,8 +103,10 @@ export const worksData = [
     image: '/images/cafeTop.jpg',
     images: ['/images/cafe.jpg'],
     tagClassName: 'bg-blue-500',
-    summary: '架空のカフェブランド向け、コンセプト設計からビジュアルデザインまで',
-    description: 'コーヒーや自然素材をイメージしたカラーで統一。ブラウン系のアクセントカラーで温かみと落ち着きを表現しました。',
+    summary:
+      '架空のカフェブランド向けに、コンセプト設計からビジュアルデザインまで一貫して取り組んだ制作です。',
+    description:
+      'コーヒーや自然素材をイメージしたカラーパレットで統一し、ブラウン系のアクセントカラーで温かみと落ち着きを表現しました。ブランドの世界観が伝わるよう、ロゴからトップページまでビジュアルを設計しています。',
     technologies: ['Figma'],
   },
   {
@@ -130,8 +136,8 @@ export const worksData = [
     image: '/images/iphone.png',
     images: ['/images/iphone.png'],
     tagClassName: 'bg-blue-500',
-    summary: 'iPhone広告バナーを制作しました。ターゲットを「都市部に住む女子学生」に設定し、トレンド性と参加したくなるお得感を重視して情報設計しています。',
-    description: `学校課題として作りましたので一つだけ紹介します、iPhone広告バナーを制作しました。
+    summary: '学校課題として制作した、iPhone広告バナーです。',
+    description: `学校課題として、iPhone広告バナーを制作しました。
 
 ターゲットを「都市部に住む女子学生」に設定し、トレンド性と参加したくなるお得感を重視して情報設計しています。
 
@@ -148,7 +154,7 @@ export const worksData = [
     tagClassName: 'bg-orange-500',
     summary: 'RIZAP様連携PJで制作した、若年層向けフィットネスアプリのUIです。',
     description:
-    'RIZAP様との産業連携プロジェクトで一週間の制作期間で、5名チームによるフィットネスアプリのプロトタイプ制作に参加し、UIデザインを担当しました。\n\nメインカラーには緑を採用し、「健康」「成長」「継続しやすさ」を視覚的に伝えることを狙っています。若年層をターゲットに、使い始めのハードルを下げる構成を意識しました。\n\n担当範囲はスライド式で掲載しております',
+      'RIZAP様との産業連携プロジェクトにおいて、5名チームでフィットネスアプリのプロトタイプ制作に参加し、UIデザインを担当しました。\n\nメインカラーには緑を採用し、「健康」「成長」「継続しやすさ」を視覚的に伝えることを狙っています。若年層をターゲットに、使い始めのハードルを下げる構成を意識しました。',
     technologies: ['Next.js', 'Tailwind CSS'],
     links: [
       {
